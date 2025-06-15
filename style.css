@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #00ff00;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#status {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border: 3px solid #00ff00;
+  color: #ffcc00;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.taken {
+  cursor: default;
+  color: #888;
+}
+
+button, select {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 10px 15px;
+  background: #111;
+  border: 3px solid #00ff00;
+  color: #00ff00;
+  margin: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover, select:hover {
+  background: #222;
+}
+
+select {
+  padding: 8px 10px;
+}
