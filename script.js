@@ -119,5 +119,4 @@ function resetGame() {
   drawBoard();
 }
 
-// Initialize the game
 drawBoard();
